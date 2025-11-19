@@ -1,6 +1,7 @@
 from flask import Flask, redirect, render_template, request, url_for
+import os
 
-app = Flask(__name__, template_folder="../templates")
+app = Flask(__name__, template_folder="../templates", static_folder="../static")
 
 # In-memory database
 items = []

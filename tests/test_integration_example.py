@@ -2,9 +2,9 @@
 import os
 import sys
 
-from src.app import app
-
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+from src.app import app
 
 # Test health endpoint
 def test_health_endpoint():
