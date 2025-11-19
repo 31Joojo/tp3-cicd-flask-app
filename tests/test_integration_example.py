@@ -1,4 +1,5 @@
 # tests/test_integration_example.py
+# ruff: noqa: I001
 import os
 import sys
 
