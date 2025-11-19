@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.14"
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
@@ -25,11 +25,7 @@ jobs:
           pip install ruff pytest
 
       - name: Run Ruff
-        run: |
-          echo "Running ruff..."
-          ruff check .
-      
-      - name: Run tests
-        run: |
-          echo "Running tests..."
-          pytest --disable-warnings -q
+        run: ruff check .
+
+      - name: Run Pytest
+        run: pytest
