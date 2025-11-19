@@ -1,5 +1,7 @@
 import unittest
+
 from src.app import items
+
 
 class FirstUnitTest(unittest.TestCase):
     def test_adding_item(self):
